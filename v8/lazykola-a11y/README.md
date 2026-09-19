@@ -12,7 +12,7 @@ Full documentation, the design presets writeup, and the serverless comment syste
 - **Proper current-page indicators**: `aria-current="page"` on nav links, instead of Bootstrap's hardcoded "active" class.
     > But but hardcoding the "current" for the page you're on works!: Sure, but there is a much more global, consistent, reliable and industry-standard way to do this; so no. Optimization, remember?
 - **Corrected heading hierarchy**: the site name in the navbar is the real `<h1>`, post titles render as `<h2>`, and a small script auto-normalizes each post's own headings so the shallowest one always starts at `<h3>`, no matter whether you started writing at `#` or `###`.
-    > **Yo wait wait, but why though?:** blind users, at the very least, regularly rely on structural navigation, like nested headings, to find their way around a page, and I'd imagine it helps low-vision users relying on things like high contrast too. But true inclusivity only works if it's for everyone, not just one group at the expense of another: making a site usable only for the sighted is inaccessible, and making it usable only for the blind is just as segregating in the other direction; accessible sure, but inclusive? Not so much. Keeping track of heading levels in your head, knowing where to start and handling every edge case, is real cognitive overhead. So instead of asking you to think about that, this script does it for you.
+    > **Yo wait wait, but why though?:** blind users, at the very least, regularly rely on structural navigation, like nested headings, to find their way around a page, and I'd imagine it helps low-vision users relying on things like high contrast too. But true inclusivity only works if it's for everyone, not just one group at the expense of another: making a site usable only for the sighted is inaccessible, and making it usable only for the blind is just as segregating in the other direction; accessible sure, but inclusive? Not so much. Keeping track of heading levels in your head, knowing where to start and handling every edge case, is cognitive overhead. So instead of asking you to think about that, this script does it for you.
 
 - **Smart logo alt text**: before, a screen reader read `"My Website!"` no matter what. Now, once you set `LOGO_ALT_TEXT`, it reads whatever you actually wrote, and the redundant site-title text stops rendering separately so it isn't read twice.
 
@@ -72,7 +72,7 @@ A few more things this theme does on its own:
 - **No redundant heading self-links**: post and page titles don't link back to themselves when you're already on that page, since a screen reader saying "link, same page" serves no one.
 - **Local timezone stamps**: appends the visitor's own local time next to each post's build date.
 - **Cleaner blog section titles**: the browser tab for the `/blog` section reads "Blog | Site Title" instead of the generic site title.
-- **Copy-to-clipboard code blocks**: every code block gets a keyboard-accessible "Copy" button, no setup required.
+- **Copy-to-clipboard code blocks**: a keyboard-focusable button on every code block, whose label changes to "Copied!" to confirm the action for sighted and screen-reader users alike.
 
 ## Comments (Optional, Not Bundled)
 
