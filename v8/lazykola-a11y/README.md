@@ -65,6 +65,15 @@ The whole theme, comment widget included, follows the visitor's OS/browser dark-
 PYGMENTS_STYLE = "monokai"
 ```
 
+## Automatic, No Config Needed
+
+A few more things this theme does on its own:
+
+- **No redundant heading self-links**: post and page titles don't link back to themselves when you're already on that page, since a screen reader saying "link, same page" serves no one.
+- **Local timezone stamps**: appends the visitor's own local time next to each post's build date.
+- **Cleaner blog section titles**: the browser tab for the `/blog` section reads "Blog | Site Title" instead of the generic site title.
+- **Copy-to-clipboard code blocks**: every code block gets a keyboard-accessible "Copy" button, no setup required.
+
 ## Comments (Optional, Not Bundled)
 
 > **This a static website generator bruh, get that crap outta here.:** this is honestly the biggest thing that sparked the motivation to build a whole new theme, and then, as these things usually go, it ballooned from there. Accessibility technologies typically cooperate better with text than with fancy UIs you have to learn the layout of and adapt to all the quirks of, so I didn't want to deal with the cognitive overhead of something like WordPress or Wix just to get this. But I still wanted people to be able to tell me how much my website sucks, without having to host my own server just for a static site to make that happen.
