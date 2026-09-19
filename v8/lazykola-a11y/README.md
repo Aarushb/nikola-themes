@@ -10,7 +10,7 @@ Full documentation, the design presets writeup, and the serverless comment syste
 ## Accessibility
 
 - **Proper current-page indicators**: `aria-current="page"` on nav links, instead of Bootstrap's hardcoded "active" class.
-    > But hardcoding the "current" for the page you're on works?!: Sure, but there is a much more global, consistant, reliable and industry-standard way to do this; so no. Obtamisation, remember?
+    > But but hardcoding the "current" for the page you're on works!: Sure, but there is a much more global, consistent, reliable and industry-standard way to do this; so no. Optimization, remember?
 - **Corrected heading hierarchy**: the site name in the navbar is the real `<h1>`, post titles render as `<h2>`, and a small script auto-normalizes each post's own headings so the shallowest one always starts at `<h3>`, no matter whether you started writing at `#` or `###`.
     > **Yo wait wait, but why though?:** blind users, at the very least, regularly rely on structural navigation, like nested headings, to find their way around a page, and I'd imagine it helps low-vision users relying on things like high contrast too. But true inclusivity only works if it's for everyone, not just one group at the expense of another: making a site usable only for the sighted is inaccessible, and making it usable only for the blind is just as segregating in the other direction; accessible sure, but inclusive? Not so much. Keeping track of heading levels in your head, knowing where to start and handling every edge case, is real cognitive overhead. So instead of asking you to think about that, this script does it for you.
 
@@ -46,7 +46,7 @@ THEME_CONFIG = {
 
 ## Navbar
 
-Not an accessibility fix, just a visual knob: switch to a light navbar, or drop in your own Bootstrap background class.
+Not an accessibility fix (whaaaat?!), just a visual knob: switch to a light navbar, or drop in your own Bootstrap background class.
 
 ```python
 THEME_CONFIG = {
@@ -82,9 +82,19 @@ COMMENT_SYSTEM = "lazykola"
 COMMENT_SYSTEM_ID = "https://your-comments-worker.yourname.workers.dev"
 ```
 
+## Using This Theme? Show It Off
+
+If you've built a site with this theme, I'd genuinely like to see it. Part of what motivates me to get up in the morning is being able to make the lives of other people just a little bit better, so if this has helped you, please share, it would make my day to hear. Plus, potential users will hear it from people other than myself if the theme is any good!
+
+Open a PR adding a link to your site (and, if you want, what preset you used) to the list below, in the main repo's README. Should this humble repo with single-digit stars be able to get you a little bit of traction, then I'm happy to serve that purpose as well.
+
+### Sites Using This Theme
+
+- [aarushb.github.io](https://aarushb.github.io): portfolio preset
+
 ## Conclusion
 
-That "sucks" remark applies to everything, by the way. If you find something horribly broken with this theme, think a feature is bad, or have other suggestions for new features, feel free to open an issue on [the main repo](https://github.com/Aarushb/lazykola-a11y/issues).
+That "sucks" remark from earlier applies to everything, by the way. If you find something horribly broken with this theme, think a feature is bad, or have other suggestions for new features, feel free to open an issue on [the main repo](https://github.com/Aarushb/lazykola-a11y/issues).
 
 [![GitHub issues](https://img.shields.io/github/issues/Aarushb/lazykola-a11y)](https://github.com/Aarushb/lazykola-a11y/issues)
 
